@@ -157,7 +157,7 @@ Informations :
 
 Pour simplifier les calculs, nous allons utiliser $\tilde \theta = \begin{pmatrix}\theta_0\\.\\.\\.\\\theta_i\end{pmatrix},\ x \rightarrow \tilde x = \begin{pmatrix}1\\.\\.\\.\\x_i\end{pmatrix}$. Nous obtenons alors $h(\tilde x) = \tilde \theta \tilde x$. La fonction d'erreur devient $J(\tilde \theta) = \Sigma_{i = 1}^mx_i^k(\tilde \theta \tilde x_i - y_i)^2$.
 
-$\frac{\partial J(\tilde \theta)}{\partial \tilde \theta_i} = 2 * \Sigma_{i = 1}^mx_i^k(\tilde \theta \tilde x_i - y_i)$ Commen on cherche une minimalisation, on peut ignore le facteur constant *2*.
+$\frac{\partial J(\tilde \theta)}{\partial \tilde \theta_i} = 2 * \Sigma_{i = 1}^mx_i^k(\tilde \theta \tilde x_i - y_i)$ Comme on cherche une minimalisation, on peut ignorer le facteur constant *2*.
 
 Nous obtenons : $\vec \nabla J (\tilde \theta) = \begin{pmatrix} \Sigma_{i=1}^mx_1^0(\tilde \theta \tilde x_i - y_i)\\.\\.\\.\\\Sigma_{i = 1}^mx_i^k(\tilde \theta \tilde x_i - y_i) \end{pmatrix} $
 
